@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "system1-eval"
+version = "0.1.0"
+description = "Open-source benchmark suite, evaluation harness, and live calibration leaderboard for System One Decision Models (Clef, Kev, Jev, Tev1) and structured LLMs."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+system1-eval = "system1_eval.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
