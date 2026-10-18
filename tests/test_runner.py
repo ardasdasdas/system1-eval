@@ -49,3 +49,5 @@ def test_run_benchmark_and_terminal_report(tmp_path: pathlib.Path):
     report = format_terminal_report(result)
     assert "kev-4b-v1" in report
     assert "ECE" in report
+    # Must encode cleanly on Windows cp1254 consoles without UnicodeEncodeError
+    assert report.encode("cp1254")

@@ -100,12 +100,12 @@ def format_terminal_report(leaderboard_data: dict[str, Any]) -> str:
     lines: list[str] = []
     lines.append("=" * 98)
     lines.append(
-        f"System1-Eval (DecisionArena) Leaderboard — Scenarios: {leaderboard_data.get('total_scenarios', 0)}"
+        f"System1-Eval (DecisionArena) Leaderboard -- Scenarios: {leaderboard_data.get('total_scenarios', 0)}"
     )
     lines.append("=" * 98)
     header = (
         f"{'Rank':<5} {'Model ID':<22} {'Type':<14} {'Arena':>7} {'Acc %':>8} "
-        f"{'ECE ↓':>8} {'Brier ↓':>8} {'p50 ms':>8} {'Out Tok':>8}"
+        f"{'ECE(v)':>8} {'Brier(v)':>8} {'p50 ms':>8} {'Out Tok':>8}"
     )
     lines.append(header)
     lines.append("-" * 98)
