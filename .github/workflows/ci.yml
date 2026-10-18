@@ -1,0 +1,25 @@
+name: System1-Eval CI
+
+on:
+  push:
+    branches: [ main, master, "feat/**" ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-and-benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install package and pytest
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest -e .
+      - name: Validate Crowdsourced Datasets
+        run: python -m system1_eval.cli validate --dataset-dir datasets
+      - name: Run Unit & Calibration Tests
+        run: python -m pytest -v
