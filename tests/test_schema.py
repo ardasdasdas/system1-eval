@@ -89,7 +89,11 @@ def test_structured_triage_missing_keys_and_normalization():
 
 
 def test_load_jsonl_reports_line_number_on_invalid_json(tmp_path: pathlib.Path):
+    valid_line = (
+        '{"id":"r1","track":"agent_routing","title":"T","state":{"p":1},'
+        '"question":{"id":"q","type":"noul","instructions":"I"},"ground_truth":{"answer":true}}'
+    )
     bad_file = tmp_path / "bad.jsonl"
-    bad_file.write_text('{"id": "ok"}\n{not_json}\n', encoding="utf-8")
+    bad_file.write_text(f"{valid_line}\n{{not_json}}\n", encoding="utf-8")
     with pytest.raises(DatasetValidationError, match="line 2"):
         load_jsonl_file(bad_file)
