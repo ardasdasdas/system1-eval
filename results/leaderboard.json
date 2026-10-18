@@ -1,0 +1,5317 @@
+{
+  "benchmark": "System1-Eval (DecisionArena)",
+  "version": "0.1.0",
+  "generated_at": "2026-10-18T19:00:13.783027+00:00",
+  "total_scenarios": 30,
+  "tracks": [
+    "agent_routing",
+    "security_guardrail",
+    "structured_triage"
+  ],
+  "models": [
+    {
+      "model_id": "clef-flash",
+      "display_name": "Clef-Flash (Cloudflare)",
+      "provider": "Cloudflare Workers AI",
+      "model_type": "system1",
+      "parameters_b": 7.0,
+      "arena_score": 91.78,
+      "overall": {
+        "count": 30,
+        "accuracy": 0.9667,
+        "ece": 0.0978,
+        "mce": 0.3474,
+        "brier_score": 0.0339,
+        "p50_ms": 21.68,
+        "p95_ms": 27.274,
+        "mean_ms": 21.42,
+        "avg_input_tokens": 139.5,
+        "avg_output_tokens": 0.0,
+        "cost_per_1k_usd": 0.00418,
+        "calibration_bins": [
+          {
+            "bin_start": 0.0,
+            "bin_end": 0.1,
+            "avg_conf": 0.05,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.1,
+            "bin_end": 0.2,
+            "avg_conf": 0.15,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.2,
+            "bin_end": 0.3,
+            "avg_conf": 0.25,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.3,
+            "bin_end": 0.4,
+            "avg_conf": 0.35,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.4,
+            "bin_end": 0.5,
+            "avg_conf": 0.45,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.5,
+            "bin_end": 0.6,
+            "avg_conf": 0.55,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.6,
+            "bin_end": 0.7,
+            "avg_conf": 0.6526,
+            "avg_acc": 1.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.7,
+            "bin_end": 0.8,
+            "avg_conf": 0.75355,
+            "avg_acc": 0.5,
+            "count": 2
+          },
+          {
+            "bin_start": 0.8,
+            "bin_end": 0.9,
+            "avg_conf": 0.84425,
+            "avg_acc": 1.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.9,
+            "bin_end": 1.0,
+            "avg_conf": 0.940842,
+            "avg_acc": 1.0,
+            "count": 24
+          }
+        ]
+      },
+      "tracks": {
+        "agent_routing": {
+          "count": 10,
+          "accuracy": 1.0,
+          "ece": 0.108,
+          "mce": 0.3451,
+          "brier_score": 0.0213,
+          "p50_ms": 24.265,
+          "p95_ms": 27.084,
+          "mean_ms": 22.618,
+          "avg_input_tokens": 197.9,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00594,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.6549,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.748,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.85,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.939625,
+              "avg_acc": 1.0,
+              "count": 8
+            }
+          ]
+        },
+        "security_guardrail": {
+          "count": 10,
+          "accuracy": 1.0,
+          "ece": 0.0994,
+          "mce": 0.3497,
+          "brier_score": 0.0177,
+          "p50_ms": 18.33,
+          "p95_ms": 25.012,
+          "mean_ms": 19.426,
+          "avg_input_tokens": 113.0,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00339,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.6503,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.75,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.8445,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.938837,
+              "avg_acc": 1.0,
+              "count": 8
+            }
+          ]
+        },
+        "structured_triage": {
+          "count": 10,
+          "accuracy": 0.9,
+          "ece": 0.1363,
+          "mce": 0.7591,
+          "brier_score": 0.0627,
+          "p50_ms": 22.37,
+          "p95_ms": 27.274,
+          "mean_ms": 22.217,
+          "avg_input_tokens": 107.5,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00323,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.7591,
+              "avg_acc": 0.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.844,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.944063,
+              "avg_acc": 1.0,
+              "count": 8
+            }
+          ]
+        }
+      },
+      "predictions": [
+        {
+          "scenario_id": "route_001",
+          "track": "agent_routing",
+          "predicted_answer": "git_diff_unstaged",
+          "confidence": 0.6549,
+          "correct": true,
+          "latency_ms": 16.08,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_002",
+          "track": "agent_routing",
+          "predicted_answer": "search_code",
+          "confidence": 0.9283,
+          "correct": true,
+          "latency_ms": 27.71,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_003",
+          "track": "agent_routing",
+          "predicted_answer": "run_tests",
+          "confidence": 0.9356,
+          "correct": true,
+          "latency_ms": 23.27,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_004",
+          "track": "agent_routing",
+          "predicted_answer": "read_url_content",
+          "confidence": 0.9205,
+          "correct": true,
+          "latency_ms": 25.5,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_005",
+          "track": "agent_routing",
+          "predicted_answer": "ask_user",
+          "confidence": 0.9417,
+          "correct": true,
+          "latency_ms": 26.32,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_006",
+          "track": "agent_routing",
+          "predicted_answer": "view_file_slice",
+          "confidence": 0.9517,
+          "correct": true,
+          "latency_ms": 25.26,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_007",
+          "track": "agent_routing",
+          "predicted_answer": "replace_file_content",
+          "confidence": 0.748,
+          "correct": true,
+          "latency_ms": 26.27,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_008",
+          "track": "agent_routing",
+          "predicted_answer": "mcp_describe_table",
+          "confidence": 0.9308,
+          "correct": true,
+          "latency_ms": 20.28,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_009",
+          "track": "agent_routing",
+          "predicted_answer": "invoke_research_subagent",
+          "confidence": 0.9537,
+          "correct": true,
+          "latency_ms": 15.7,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_010",
+          "track": "agent_routing",
+          "predicted_answer": "route_fast_small_model",
+          "confidence": 0.9547,
+          "correct": true,
+          "latency_ms": 19.79,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_001",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9416,
+          "correct": true,
+          "latency_ms": 15.57,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_002",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.9268,
+          "correct": true,
+          "latency_ms": 15.52,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_003",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.8445,
+          "correct": true,
+          "latency_ms": 16.31,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_004",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.9512,
+          "correct": true,
+          "latency_ms": 19.64,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_005",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9299,
+          "correct": true,
+          "latency_ms": 23.27,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_006",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.6503,
+          "correct": true,
+          "latency_ms": 21.65,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_007",
+          "track": "security_guardrail",
+          "predicted_answer": 3,
+          "confidence": 0.9531,
+          "correct": true,
+          "latency_ms": 17.02,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_008",
+          "track": "security_guardrail",
+          "predicted_answer": 0,
+          "confidence": 0.937,
+          "correct": true,
+          "latency_ms": 15.37,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_009",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9235,
+          "correct": true,
+          "latency_ms": 25.53,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_010",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9476,
+          "correct": true,
+          "latency_ms": 24.38,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_001",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "EAR2026000018492",
+            "net_amount": 10000.0,
+            "vat_rate": 20,
+            "total_amount": 12000.0,
+            "currency": "TRY"
+          },
+          "confidence": 0.9348,
+          "correct": true,
+          "latency_ms": 24.17,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_002",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "__corrupted__",
+            "total_amount": 450.0,
+            "currency": "USD",
+            "payment_status": "PAID"
+          },
+          "confidence": 0.7591,
+          "correct": false,
+          "latency_ms": 23.03,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_003",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "bill_of_lading": "TR-IST-90921",
+            "weight_kg": 1450.5,
+            "hs_code": "8471.50",
+            "declared_value": 28500.0,
+            "currency": "EUR"
+          },
+          "confidence": 0.9469,
+          "correct": true,
+          "latency_ms": 20.2,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_004",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "exception_type": "ZeroDivisionError",
+            "file_path": "/app/billing/calc.py",
+            "line_number": 142,
+            "order_id": "ORD-7712"
+          },
+          "confidence": 0.947,
+          "correct": true,
+          "latency_ms": 21.71,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_005",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "memo_id": "CM-2026-551",
+            "ref_invoice": "EAR2026000011000",
+            "refund_amount": -3450.75,
+            "currency": "EUR",
+            "approved": true
+          },
+          "confidence": 0.9746,
+          "correct": true,
+          "latency_ms": 27.54,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_006",
+          "track": "structured_triage",
+          "predicted_answer": false,
+          "confidence": 0.9303,
+          "correct": true,
+          "latency_ms": 26.95,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_007",
+          "track": "structured_triage",
+          "predicted_answer": "upstream_timeout_504",
+          "confidence": 0.9388,
+          "correct": true,
+          "latency_ms": 20.45,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_008",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "model": "clef-flash",
+            "status": 200,
+            "in_tok": 312,
+            "out_tok": 0,
+            "latency_ms": 17.4,
+            "cached": true
+          },
+          "confidence": 0.844,
+          "correct": true,
+          "latency_ms": 16.4,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_009",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "contract_id": "KRD-4409",
+            "principal": 250000.0,
+            "term_months": 12,
+            "monthly_rate_pct": 3.49,
+            "early_close_fee_pct": 2.0
+          },
+          "confidence": 0.9286,
+          "correct": true,
+          "latency_ms": 17.45,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_010",
+          "track": "structured_triage",
+          "predicted_answer": 3,
+          "confidence": 0.9515,
+          "correct": true,
+          "latency_ms": 24.27,
+          "output_tokens": 0
+        }
+      ]
+    },
+    {
+      "model_id": "kev-4b-v1",
+      "display_name": "Kev-4B-v1 (Apache 2.0)",
+      "provider": "Local / Ollama (Jared Palmer)",
+      "model_type": "system1",
+      "parameters_b": 4.0,
+      "arena_score": 90.06,
+      "overall": {
+        "count": 30,
+        "accuracy": 0.9333,
+        "ece": 0.0653,
+        "mce": 0.3477,
+        "brier_score": 0.0752,
+        "p50_ms": 16.475,
+        "p95_ms": 21.121,
+        "mean_ms": 16.686,
+        "avg_input_tokens": 139.5,
+        "avg_output_tokens": 0.0,
+        "cost_per_1k_usd": 0.00279,
+        "calibration_bins": [
+          {
+            "bin_start": 0.0,
+            "bin_end": 0.1,
+            "avg_conf": 0.05,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.1,
+            "bin_end": 0.2,
+            "avg_conf": 0.15,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.2,
+            "bin_end": 0.3,
+            "avg_conf": 0.25,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.3,
+            "bin_end": 0.4,
+            "avg_conf": 0.35,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.4,
+            "bin_end": 0.5,
+            "avg_conf": 0.45,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.5,
+            "bin_end": 0.6,
+            "avg_conf": 0.55,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.6,
+            "bin_end": 0.7,
+            "avg_conf": 0.6523,
+            "avg_acc": 1.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.7,
+            "bin_end": 0.8,
+            "avg_conf": 0.7637,
+            "avg_acc": 1.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.8,
+            "bin_end": 0.9,
+            "avg_conf": 0.8544,
+            "avg_acc": 1.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.9,
+            "bin_end": 1.0,
+            "avg_conf": 0.937542,
+            "avg_acc": 0.916667,
+            "count": 24
+          }
+        ]
+      },
+      "tracks": {
+        "agent_routing": {
+          "count": 10,
+          "accuracy": 0.8,
+          "ece": 0.211,
+          "mce": 0.3604,
+          "brier_score": 0.1978,
+          "p50_ms": 13.96,
+          "p95_ms": 20.39,
+          "mean_ms": 15.243,
+          "avg_input_tokens": 197.9,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00396,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.6396,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.7662,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.85,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.939438,
+              "avg_acc": 0.75,
+              "count": 8
+            }
+          ]
+        },
+        "security_guardrail": {
+          "count": 10,
+          "accuracy": 1.0,
+          "ece": 0.1026,
+          "mce": 0.335,
+          "brier_score": 0.0171,
+          "p50_ms": 16.415,
+          "p95_ms": 20.972,
+          "mean_ms": 16.415,
+          "avg_input_tokens": 113.0,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00226,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.665,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.75,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.8564,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.931625,
+              "avg_acc": 1.0,
+              "count": 8
+            }
+          ]
+        },
+        "structured_triage": {
+          "count": 10,
+          "accuracy": 1.0,
+          "ece": 0.0854,
+          "mce": 0.2388,
+          "brier_score": 0.0107,
+          "p50_ms": 17.41,
+          "p95_ms": 21.143,
+          "mean_ms": 18.399,
+          "avg_input_tokens": 107.5,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00215,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.7612,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.8524,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.941562,
+              "avg_acc": 1.0,
+              "count": 8
+            }
+          ]
+        }
+      },
+      "predictions": [
+        {
+          "scenario_id": "route_001",
+          "track": "agent_routing",
+          "predicted_answer": "git_diff_unstaged",
+          "confidence": 0.6396,
+          "correct": true,
+          "latency_ms": 13.18,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_002",
+          "track": "agent_routing",
+          "predicted_answer": "search_code",
+          "confidence": 0.9504,
+          "correct": true,
+          "latency_ms": 20.48,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_003",
+          "track": "agent_routing",
+          "predicted_answer": "read_file",
+          "confidence": 0.9304,
+          "correct": false,
+          "latency_ms": 12.82,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_004",
+          "track": "agent_routing",
+          "predicted_answer": "read_url_content",
+          "confidence": 0.917,
+          "correct": true,
+          "latency_ms": 11.64,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_005",
+          "track": "agent_routing",
+          "predicted_answer": "ask_user",
+          "confidence": 0.9273,
+          "correct": true,
+          "latency_ms": 20.28,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_006",
+          "track": "agent_routing",
+          "predicted_answer": "view_file_slice",
+          "confidence": 0.9477,
+          "correct": true,
+          "latency_ms": 16.27,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_007",
+          "track": "agent_routing",
+          "predicted_answer": "replace_file_content",
+          "confidence": 0.7662,
+          "correct": true,
+          "latency_ms": 18.64,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_008",
+          "track": "agent_routing",
+          "predicted_answer": "mcp_execute_mutation",
+          "confidence": 0.9508,
+          "correct": false,
+          "latency_ms": 12.01,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_009",
+          "track": "agent_routing",
+          "predicted_answer": "invoke_research_subagent",
+          "confidence": 0.9392,
+          "correct": true,
+          "latency_ms": 14.74,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_010",
+          "track": "agent_routing",
+          "predicted_answer": "route_fast_small_model",
+          "confidence": 0.9527,
+          "correct": true,
+          "latency_ms": 12.37,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_001",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9293,
+          "correct": true,
+          "latency_ms": 16.28,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_002",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.9271,
+          "correct": true,
+          "latency_ms": 16.55,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_003",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.8564,
+          "correct": true,
+          "latency_ms": 11.65,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_004",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.9244,
+          "correct": true,
+          "latency_ms": 17.18,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_005",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9352,
+          "correct": true,
+          "latency_ms": 14.33,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_006",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.665,
+          "correct": true,
+          "latency_ms": 12.16,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_007",
+          "track": "security_guardrail",
+          "predicted_answer": 3,
+          "confidence": 0.952,
+          "correct": true,
+          "latency_ms": 19.96,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_008",
+          "track": "security_guardrail",
+          "predicted_answer": 0,
+          "confidence": 0.924,
+          "correct": true,
+          "latency_ms": 20.56,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_009",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9272,
+          "correct": true,
+          "latency_ms": 21.31,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_010",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9338,
+          "correct": true,
+          "latency_ms": 14.17,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_001",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "EAR2026000018492",
+            "net_amount": 10000.0,
+            "vat_rate": 20,
+            "total_amount": 12000.0,
+            "currency": "TRY"
+          },
+          "confidence": 0.9352,
+          "correct": true,
+          "latency_ms": 17.15,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_002",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "INV-8841-US",
+            "total_amount": 450.0,
+            "currency": "USD",
+            "payment_status": "PAID"
+          },
+          "confidence": 0.7612,
+          "correct": true,
+          "latency_ms": 15.8,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_003",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "bill_of_lading": "TR-IST-90921",
+            "weight_kg": 1450.5,
+            "hs_code": "8471.50",
+            "declared_value": 28500.0,
+            "currency": "EUR"
+          },
+          "confidence": 0.9414,
+          "correct": true,
+          "latency_ms": 16.4,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_004",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "exception_type": "ZeroDivisionError",
+            "file_path": "/app/billing/calc.py",
+            "line_number": 142,
+            "order_id": "ORD-7712"
+          },
+          "confidence": 0.9513,
+          "correct": true,
+          "latency_ms": 20.82,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_005",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "memo_id": "CM-2026-551",
+            "ref_invoice": "EAR2026000011000",
+            "refund_amount": -3450.75,
+            "currency": "EUR",
+            "approved": true
+          },
+          "confidence": 0.951,
+          "correct": true,
+          "latency_ms": 20.6,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_006",
+          "track": "structured_triage",
+          "predicted_answer": false,
+          "confidence": 0.937,
+          "correct": true,
+          "latency_ms": 21.35,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_007",
+          "track": "structured_triage",
+          "predicted_answer": "upstream_timeout_504",
+          "confidence": 0.9509,
+          "correct": true,
+          "latency_ms": 16.16,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_008",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "model": "clef-flash",
+            "status": 200,
+            "in_tok": 312,
+            "out_tok": 0,
+            "latency_ms": 17.4,
+            "cached": true
+          },
+          "confidence": 0.8524,
+          "correct": true,
+          "latency_ms": 17.29,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_009",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "contract_id": "KRD-4409",
+            "principal": 250000.0,
+            "term_months": 12,
+            "monthly_rate_pct": 3.49,
+            "early_close_fee_pct": 2.0
+          },
+          "confidence": 0.9395,
+          "correct": true,
+          "latency_ms": 20.89,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_010",
+          "track": "structured_triage",
+          "predicted_answer": 3,
+          "confidence": 0.9262,
+          "correct": true,
+          "latency_ms": 17.53,
+          "output_tokens": 0
+        }
+      ]
+    },
+    {
+      "model_id": "llama-3.1-8b-vllm",
+      "display_name": "Llama-3.1-8B-Instruct (Structured)",
+      "provider": "vLLM / llama.cpp JSON",
+      "model_type": "llm_structured",
+      "parameters_b": 8.0,
+      "arena_score": 87.35,
+      "overall": {
+        "count": 30,
+        "accuracy": 0.9333,
+        "ece": 0.1196,
+        "mce": 0.205,
+        "brier_score": 0.0701,
+        "p50_ms": 371.215,
+        "p95_ms": 457.622,
+        "mean_ms": 371.516,
+        "avg_input_tokens": 139.5,
+        "avg_output_tokens": 50.2,
+        "cost_per_1k_usd": 0.06127,
+        "calibration_bins": [
+          {
+            "bin_start": 0.0,
+            "bin_end": 0.1,
+            "avg_conf": 0.05,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.1,
+            "bin_end": 0.2,
+            "avg_conf": 0.15,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.2,
+            "bin_end": 0.3,
+            "avg_conf": 0.25,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.3,
+            "bin_end": 0.4,
+            "avg_conf": 0.35,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.4,
+            "bin_end": 0.5,
+            "avg_conf": 0.45,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.5,
+            "bin_end": 0.6,
+            "avg_conf": 0.55,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.6,
+            "bin_end": 0.7,
+            "avg_conf": 0.65,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.7,
+            "bin_end": 0.8,
+            "avg_conf": 0.795,
+            "avg_acc": 1.0,
+            "count": 6
+          },
+          {
+            "bin_start": 0.8,
+            "bin_end": 0.9,
+            "avg_conf": 0.895,
+            "avg_acc": 1.0,
+            "count": 6
+          },
+          {
+            "bin_start": 0.9,
+            "bin_end": 1.0,
+            "avg_conf": 0.984856,
+            "avg_acc": 0.888889,
+            "count": 18
+          }
+        ]
+      },
+      "tracks": {
+        "agent_routing": {
+          "count": 10,
+          "accuracy": 1.0,
+          "ece": 0.068,
+          "mce": 0.205,
+          "brier_score": 0.0107,
+          "p50_ms": 337.76,
+          "p95_ms": 441.696,
+          "mean_ms": 356.863,
+          "avg_input_tokens": 197.9,
+          "avg_output_tokens": 48.3,
+          "cost_per_1k_usd": 0.0704,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.795,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.895,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.99,
+              "avg_acc": 1.0,
+              "count": 6
+            }
+          ]
+        },
+        "security_guardrail": {
+          "count": 10,
+          "accuracy": 0.9,
+          "ece": 0.1536,
+          "mce": 0.205,
+          "brier_score": 0.1041,
+          "p50_ms": 384.53,
+          "p95_ms": 437.552,
+          "mean_ms": 376.617,
+          "avg_input_tokens": 113.0,
+          "avg_output_tokens": 51.0,
+          "cost_per_1k_usd": 0.05706,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.795,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.895,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.986067,
+              "avg_acc": 0.833333,
+              "count": 6
+            }
+          ]
+        },
+        "structured_triage": {
+          "count": 10,
+          "accuracy": 0.9,
+          "ece": 0.1491,
+          "mce": 0.205,
+          "brier_score": 0.0955,
+          "p50_ms": 372.94,
+          "p95_ms": 455.499,
+          "mean_ms": 381.068,
+          "avg_input_tokens": 107.5,
+          "avg_output_tokens": 51.4,
+          "cost_per_1k_usd": 0.05636,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.795,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.895,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.9785,
+              "avg_acc": 0.833333,
+              "count": 6
+            }
+          ]
+        }
+      },
+      "predictions": [
+        {
+          "scenario_id": "route_001",
+          "track": "agent_routing",
+          "predicted_answer": "git_diff_unstaged",
+          "confidence": 0.795,
+          "correct": true,
+          "latency_ms": 423.81,
+          "output_tokens": 57
+        },
+        {
+          "scenario_id": "route_002",
+          "track": "agent_routing",
+          "predicted_answer": "search_code",
+          "confidence": 0.895,
+          "correct": true,
+          "latency_ms": 284.9,
+          "output_tokens": 39
+        },
+        {
+          "scenario_id": "route_003",
+          "track": "agent_routing",
+          "predicted_answer": "run_tests",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 403.85,
+          "output_tokens": 54
+        },
+        {
+          "scenario_id": "route_004",
+          "track": "agent_routing",
+          "predicted_answer": "read_url_content",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 335.27,
+          "output_tokens": 46
+        },
+        {
+          "scenario_id": "route_005",
+          "track": "agent_routing",
+          "predicted_answer": "ask_user",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 317.41,
+          "output_tokens": 43
+        },
+        {
+          "scenario_id": "route_006",
+          "track": "agent_routing",
+          "predicted_answer": "view_file_slice",
+          "confidence": 0.795,
+          "correct": true,
+          "latency_ms": 315.38,
+          "output_tokens": 43
+        },
+        {
+          "scenario_id": "route_007",
+          "track": "agent_routing",
+          "predicted_answer": "replace_file_content",
+          "confidence": 0.895,
+          "correct": true,
+          "latency_ms": 305.46,
+          "output_tokens": 42
+        },
+        {
+          "scenario_id": "route_008",
+          "track": "agent_routing",
+          "predicted_answer": "mcp_describe_table",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 385.97,
+          "output_tokens": 52
+        },
+        {
+          "scenario_id": "route_009",
+          "track": "agent_routing",
+          "predicted_answer": "invoke_research_subagent",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 340.25,
+          "output_tokens": 46
+        },
+        {
+          "scenario_id": "route_010",
+          "track": "agent_routing",
+          "predicted_answer": "route_fast_small_model",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 456.33,
+          "output_tokens": 61
+        },
+        {
+          "scenario_id": "guard_001",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.795,
+          "correct": true,
+          "latency_ms": 344.01,
+          "output_tokens": 47
+        },
+        {
+          "scenario_id": "guard_002",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.895,
+          "correct": true,
+          "latency_ms": 395.27,
+          "output_tokens": 53
+        },
+        {
+          "scenario_id": "guard_003",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 272.61,
+          "output_tokens": 38
+        },
+        {
+          "scenario_id": "guard_004",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 342.9,
+          "output_tokens": 47
+        },
+        {
+          "scenario_id": "guard_005",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.9664,
+          "correct": false,
+          "latency_ms": 458.68,
+          "output_tokens": 61
+        },
+        {
+          "scenario_id": "guard_006",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.795,
+          "correct": true,
+          "latency_ms": 411.73,
+          "output_tokens": 55
+        },
+        {
+          "scenario_id": "guard_007",
+          "track": "security_guardrail",
+          "predicted_answer": 3,
+          "confidence": 0.895,
+          "correct": true,
+          "latency_ms": 373.79,
+          "output_tokens": 51
+        },
+        {
+          "scenario_id": "guard_008",
+          "track": "security_guardrail",
+          "predicted_answer": 0,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 401.01,
+          "output_tokens": 54
+        },
+        {
+          "scenario_id": "guard_009",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 397.53,
+          "output_tokens": 54
+        },
+        {
+          "scenario_id": "guard_010",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 368.64,
+          "output_tokens": 50
+        },
+        {
+          "scenario_id": "struct_001",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "EAR2026000018492",
+            "net_amount": 10000.0,
+            "vat_rate": 20,
+            "total_amount": 12000.0,
+            "currency": "TRY"
+          },
+          "confidence": 0.795,
+          "correct": true,
+          "latency_ms": 377.99,
+          "output_tokens": 51
+        },
+        {
+          "scenario_id": "struct_002",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "INV-8841-US",
+            "total_amount": 450.0,
+            "currency": "USD",
+            "payment_status": "PAID"
+          },
+          "confidence": 0.895,
+          "correct": true,
+          "latency_ms": 447.01,
+          "output_tokens": 60
+        },
+        {
+          "scenario_id": "struct_003",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "bill_of_lading": "TR-IST-90921",
+            "weight_kg": 1450.5,
+            "hs_code": "8471.50",
+            "declared_value": 28500.0,
+            "currency": "EUR"
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 308.23,
+          "output_tokens": 42
+        },
+        {
+          "scenario_id": "struct_004",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "exception_type": "ZeroDivisionError",
+            "file_path": "/app/billing/calc.py",
+            "line_number": 142,
+            "order_id": "ORD-7712"
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 313.57,
+          "output_tokens": 43
+        },
+        {
+          "scenario_id": "struct_005",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "memo_id": "__corrupted__",
+            "ref_invoice": "EAR2026000011000",
+            "refund_amount": -3450.75,
+            "currency": "EUR",
+            "approved": true
+          },
+          "confidence": 0.921,
+          "correct": false,
+          "latency_ms": 459.27,
+          "output_tokens": 61
+        },
+        {
+          "scenario_id": "struct_006",
+          "track": "structured_triage",
+          "predicted_answer": false,
+          "confidence": 0.795,
+          "correct": true,
+          "latency_ms": 301.07,
+          "output_tokens": 41
+        },
+        {
+          "scenario_id": "struct_007",
+          "track": "structured_triage",
+          "predicted_answer": "upstream_timeout_504",
+          "confidence": 0.895,
+          "correct": true,
+          "latency_ms": 335.62,
+          "output_tokens": 46
+        },
+        {
+          "scenario_id": "struct_008",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "model": "clef-flash",
+            "status": 200,
+            "in_tok": 312,
+            "out_tok": 0,
+            "latency_ms": 17.4,
+            "cached": true
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 450.89,
+          "output_tokens": 60
+        },
+        {
+          "scenario_id": "struct_009",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "contract_id": "KRD-4409",
+            "principal": 250000.0,
+            "term_months": 12,
+            "monthly_rate_pct": 3.49,
+            "early_close_fee_pct": 2.0
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 449.14,
+          "output_tokens": 60
+        },
+        {
+          "scenario_id": "struct_010",
+          "track": "structured_triage",
+          "predicted_answer": 3,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 367.89,
+          "output_tokens": 50
+        }
+      ]
+    },
+    {
+      "model_id": "qwen-2.5-7b-vllm",
+      "display_name": "Qwen-2.5-7B-Instruct (Structured)",
+      "provider": "vLLM Guided Decoding",
+      "model_type": "llm_structured",
+      "parameters_b": 7.0,
+      "arena_score": 82.39,
+      "overall": {
+        "count": 30,
+        "accuracy": 0.9,
+        "ece": 0.1523,
+        "mce": 0.235,
+        "brier_score": 0.1012,
+        "p50_ms": 312.355,
+        "p95_ms": 383.296,
+        "mean_ms": 315.268,
+        "avg_input_tokens": 139.5,
+        "avg_output_tokens": 50.6,
+        "cost_per_1k_usd": 0.05126,
+        "calibration_bins": [
+          {
+            "bin_start": 0.0,
+            "bin_end": 0.1,
+            "avg_conf": 0.05,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.1,
+            "bin_end": 0.2,
+            "avg_conf": 0.15,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.2,
+            "bin_end": 0.3,
+            "avg_conf": 0.25,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.3,
+            "bin_end": 0.4,
+            "avg_conf": 0.35,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.4,
+            "bin_end": 0.5,
+            "avg_conf": 0.45,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.5,
+            "bin_end": 0.6,
+            "avg_conf": 0.55,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.6,
+            "bin_end": 0.7,
+            "avg_conf": 0.65,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.7,
+            "bin_end": 0.8,
+            "avg_conf": 0.765,
+            "avg_acc": 1.0,
+            "count": 6
+          },
+          {
+            "bin_start": 0.8,
+            "bin_end": 0.9,
+            "avg_conf": 0.865,
+            "avg_acc": 1.0,
+            "count": 5
+          },
+          {
+            "bin_start": 0.9,
+            "bin_end": 1.0,
+            "avg_conf": 0.972847,
+            "avg_acc": 0.842105,
+            "count": 19
+          }
+        ]
+      },
+      "tracks": {
+        "agent_routing": {
+          "count": 10,
+          "accuracy": 0.9,
+          "ece": 0.1552,
+          "mce": 0.235,
+          "brier_score": 0.098,
+          "p50_ms": 347.83,
+          "p95_ms": 378.405,
+          "mean_ms": 328.575,
+          "avg_input_tokens": 197.9,
+          "avg_output_tokens": 52.4,
+          "cost_per_1k_usd": 0.06112,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.765,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.865,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.968583,
+              "avg_acc": 0.833333,
+              "count": 6
+            }
+          ]
+        },
+        "security_guardrail": {
+          "count": 10,
+          "accuracy": 0.8,
+          "ece": 0.2388,
+          "mce": 0.2547,
+          "brier_score": 0.1904,
+          "p50_ms": 322.31,
+          "p95_ms": 385.65,
+          "mean_ms": 319.579,
+          "avg_input_tokens": 113.0,
+          "avg_output_tokens": 51.2,
+          "cost_per_1k_usd": 0.04767,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.765,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.865,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.968943,
+              "avg_acc": 0.714286,
+              "count": 7
+            }
+          ]
+        },
+        "structured_triage": {
+          "count": 10,
+          "accuracy": 1.0,
+          "ece": 0.085,
+          "mce": 0.235,
+          "brier_score": 0.015,
+          "p50_ms": 294.89,
+          "p95_ms": 353.065,
+          "mean_ms": 297.651,
+          "avg_input_tokens": 107.5,
+          "avg_output_tokens": 48.1,
+          "cost_per_1k_usd": 0.04498,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.765,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.865,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.981667,
+              "avg_acc": 1.0,
+              "count": 6
+            }
+          ]
+        }
+      },
+      "predictions": [
+        {
+          "scenario_id": "route_001",
+          "track": "agent_routing",
+          "predicted_answer": "git_diff_unstaged",
+          "confidence": 0.765,
+          "correct": true,
+          "latency_ms": 255.99,
+          "output_tokens": 42
+        },
+        {
+          "scenario_id": "route_002",
+          "track": "agent_routing",
+          "predicted_answer": "search_code",
+          "confidence": 0.865,
+          "correct": true,
+          "latency_ms": 354.37,
+          "output_tokens": 56
+        },
+        {
+          "scenario_id": "route_003",
+          "track": "agent_routing",
+          "predicted_answer": "run_tests",
+          "confidence": 0.965,
+          "correct": true,
+          "latency_ms": 359.17,
+          "output_tokens": 57
+        },
+        {
+          "scenario_id": "route_004",
+          "track": "agent_routing",
+          "predicted_answer": "read_url_content",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 292.25,
+          "output_tokens": 47
+        },
+        {
+          "scenario_id": "route_005",
+          "track": "agent_routing",
+          "predicted_answer": "write_file",
+          "confidence": 0.9115,
+          "correct": false,
+          "latency_ms": 386.1,
+          "output_tokens": 61
+        },
+        {
+          "scenario_id": "route_006",
+          "track": "agent_routing",
+          "predicted_answer": "view_file_slice",
+          "confidence": 0.765,
+          "correct": true,
+          "latency_ms": 369.0,
+          "output_tokens": 58
+        },
+        {
+          "scenario_id": "route_007",
+          "track": "agent_routing",
+          "predicted_answer": "replace_file_content",
+          "confidence": 0.865,
+          "correct": true,
+          "latency_ms": 341.29,
+          "output_tokens": 54
+        },
+        {
+          "scenario_id": "route_008",
+          "track": "agent_routing",
+          "predicted_answer": "mcp_describe_table",
+          "confidence": 0.965,
+          "correct": true,
+          "latency_ms": 260.48,
+          "output_tokens": 43
+        },
+        {
+          "scenario_id": "route_009",
+          "track": "agent_routing",
+          "predicted_answer": "invoke_research_subagent",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 362.55,
+          "output_tokens": 57
+        },
+        {
+          "scenario_id": "route_010",
+          "track": "agent_routing",
+          "predicted_answer": "route_fast_small_model",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 304.55,
+          "output_tokens": 49
+        },
+        {
+          "scenario_id": "guard_001",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.765,
+          "correct": true,
+          "latency_ms": 324.78,
+          "output_tokens": 52
+        },
+        {
+          "scenario_id": "guard_002",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.865,
+          "correct": true,
+          "latency_ms": 336.41,
+          "output_tokens": 54
+        },
+        {
+          "scenario_id": "guard_003",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.965,
+          "correct": true,
+          "latency_ms": 355.06,
+          "output_tokens": 56
+        },
+        {
+          "scenario_id": "guard_004",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 319.84,
+          "output_tokens": 51
+        },
+        {
+          "scenario_id": "guard_005",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 304.87,
+          "output_tokens": 49
+        },
+        {
+          "scenario_id": "guard_006",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.765,
+          "correct": true,
+          "latency_ms": 274.0,
+          "output_tokens": 45
+        },
+        {
+          "scenario_id": "guard_007",
+          "track": "security_guardrail",
+          "predicted_answer": 0,
+          "confidence": 0.9198,
+          "correct": false,
+          "latency_ms": 390.38,
+          "output_tokens": 61
+        },
+        {
+          "scenario_id": "guard_008",
+          "track": "security_guardrail",
+          "predicted_answer": 0,
+          "confidence": 0.965,
+          "correct": true,
+          "latency_ms": 225.68,
+          "output_tokens": 38
+        },
+        {
+          "scenario_id": "guard_009",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 284.9,
+          "output_tokens": 46
+        },
+        {
+          "scenario_id": "guard_010",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.9628,
+          "correct": false,
+          "latency_ms": 379.87,
+          "output_tokens": 60
+        },
+        {
+          "scenario_id": "struct_001",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "EAR2026000018492",
+            "net_amount": 10000.0,
+            "vat_rate": 20,
+            "total_amount": 12000.0,
+            "currency": "TRY"
+          },
+          "confidence": 0.765,
+          "correct": true,
+          "latency_ms": 302.4,
+          "output_tokens": 49
+        },
+        {
+          "scenario_id": "struct_002",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "INV-8841-US",
+            "total_amount": 450.0,
+            "currency": "USD",
+            "payment_status": "PAID"
+          },
+          "confidence": 0.865,
+          "correct": true,
+          "latency_ms": 344.05,
+          "output_tokens": 55
+        },
+        {
+          "scenario_id": "struct_003",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "bill_of_lading": "TR-IST-90921",
+            "weight_kg": 1450.5,
+            "hs_code": "8471.50",
+            "declared_value": 28500.0,
+            "currency": "EUR"
+          },
+          "confidence": 0.965,
+          "correct": true,
+          "latency_ms": 346.08,
+          "output_tokens": 55
+        },
+        {
+          "scenario_id": "struct_004",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "exception_type": "ZeroDivisionError",
+            "file_path": "/app/billing/calc.py",
+            "line_number": 142,
+            "order_id": "ORD-7712"
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 252.82,
+          "output_tokens": 42
+        },
+        {
+          "scenario_id": "struct_005",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "memo_id": "CM-2026-551",
+            "ref_invoice": "EAR2026000011000",
+            "refund_amount": -3450.75,
+            "currency": "EUR",
+            "approved": true
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 291.13,
+          "output_tokens": 47
+        },
+        {
+          "scenario_id": "struct_006",
+          "track": "structured_triage",
+          "predicted_answer": false,
+          "confidence": 0.765,
+          "correct": true,
+          "latency_ms": 225.28,
+          "output_tokens": 38
+        },
+        {
+          "scenario_id": "struct_007",
+          "track": "structured_triage",
+          "predicted_answer": "upstream_timeout_504",
+          "confidence": 0.865,
+          "correct": true,
+          "latency_ms": 272.01,
+          "output_tokens": 44
+        },
+        {
+          "scenario_id": "struct_008",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "model": "clef-flash",
+            "status": 200,
+            "in_tok": 312,
+            "out_tok": 0,
+            "latency_ms": 17.4,
+            "cached": true
+          },
+          "confidence": 0.965,
+          "correct": true,
+          "latency_ms": 298.65,
+          "output_tokens": 48
+        },
+        {
+          "scenario_id": "struct_009",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "contract_id": "KRD-4409",
+            "principal": 250000.0,
+            "term_months": 12,
+            "monthly_rate_pct": 3.49,
+            "early_close_fee_pct": 2.0
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 285.31,
+          "output_tokens": 46
+        },
+        {
+          "scenario_id": "struct_010",
+          "track": "structured_triage",
+          "predicted_answer": 3,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 358.78,
+          "output_tokens": 57
+        }
+      ]
+    },
+    {
+      "model_id": "kev-0.8b-edge",
+      "display_name": "Kev-0.8B-Edge",
+      "provider": "Local / MLX / Ollama",
+      "model_type": "system1",
+      "parameters_b": 0.8,
+      "arena_score": 82.3,
+      "overall": {
+        "count": 30,
+        "accuracy": 0.8667,
+        "ece": 0.0874,
+        "mce": 0.3358,
+        "brier_score": 0.1248,
+        "p50_ms": 7.73,
+        "p95_ms": 9.607,
+        "mean_ms": 7.632,
+        "avg_input_tokens": 139.5,
+        "avg_output_tokens": 0.0,
+        "cost_per_1k_usd": 0.00139,
+        "calibration_bins": [
+          {
+            "bin_start": 0.0,
+            "bin_end": 0.1,
+            "avg_conf": 0.05,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.1,
+            "bin_end": 0.2,
+            "avg_conf": 0.15,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.2,
+            "bin_end": 0.3,
+            "avg_conf": 0.25,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.3,
+            "bin_end": 0.4,
+            "avg_conf": 0.35,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.4,
+            "bin_end": 0.5,
+            "avg_conf": 0.45,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.5,
+            "bin_end": 0.6,
+            "avg_conf": 0.55,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.6,
+            "bin_end": 0.7,
+            "avg_conf": 0.6642,
+            "avg_acc": 1.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.7,
+            "bin_end": 0.8,
+            "avg_conf": 0.75305,
+            "avg_acc": 1.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.8,
+            "bin_end": 0.9,
+            "avg_conf": 0.874177,
+            "avg_acc": 0.818182,
+            "count": 22
+          },
+          {
+            "bin_start": 0.9,
+            "bin_end": 1.0,
+            "avg_conf": 0.9439,
+            "avg_acc": 1.0,
+            "count": 4
+          }
+        ]
+      },
+      "tracks": {
+        "agent_routing": {
+          "count": 10,
+          "accuracy": 0.9,
+          "ece": 0.0976,
+          "mce": 0.3336,
+          "brier_score": 0.1035,
+          "p50_ms": 7.645,
+          "p95_ms": 9.594,
+          "mean_ms": 7.733,
+          "avg_input_tokens": 197.9,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00198,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.6664,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.7477,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.8795,
+              "avg_acc": 0.833333,
+              "count": 6
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.9435,
+              "avg_acc": 1.0,
+              "count": 2
+            }
+          ]
+        },
+        "security_guardrail": {
+          "count": 10,
+          "accuracy": 0.7,
+          "ece": 0.2418,
+          "mce": 0.338,
+          "brier_score": 0.2508,
+          "p50_ms": 8.155,
+          "p95_ms": 9.521,
+          "mean_ms": 8.019,
+          "avg_input_tokens": 113.0,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00113,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.662,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.75,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.8763,
+              "avg_acc": 0.625,
+              "count": 8
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.9302,
+              "avg_acc": 1.0,
+              "count": 1
+            }
+          ]
+        },
+        "structured_triage": {
+          "count": 10,
+          "accuracy": 1.0,
+          "ece": 0.1339,
+          "mce": 0.2416,
+          "brier_score": 0.0201,
+          "p50_ms": 7.055,
+          "p95_ms": 9.322,
+          "mean_ms": 7.145,
+          "avg_input_tokens": 107.5,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00108,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.7584,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.868063,
+              "avg_acc": 1.0,
+              "count": 8
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.9584,
+              "avg_acc": 1.0,
+              "count": 1
+            }
+          ]
+        }
+      },
+      "predictions": [
+        {
+          "scenario_id": "route_001",
+          "track": "agent_routing",
+          "predicted_answer": "git_diff_unstaged",
+          "confidence": 0.6664,
+          "correct": true,
+          "latency_ms": 6.7,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_002",
+          "track": "agent_routing",
+          "predicted_answer": "search_code",
+          "confidence": 0.8805,
+          "correct": true,
+          "latency_ms": 8.64,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_003",
+          "track": "agent_routing",
+          "predicted_answer": "run_tests",
+          "confidence": 0.8787,
+          "correct": true,
+          "latency_ms": 8.64,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_004",
+          "track": "agent_routing",
+          "predicted_answer": "read_url_content",
+          "confidence": 0.931,
+          "correct": true,
+          "latency_ms": 7.17,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_005",
+          "track": "agent_routing",
+          "predicted_answer": "write_file",
+          "confidence": 0.883,
+          "correct": false,
+          "latency_ms": 5.47,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_006",
+          "track": "agent_routing",
+          "predicted_answer": "view_file_slice",
+          "confidence": 0.8745,
+          "correct": true,
+          "latency_ms": 7.57,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_007",
+          "track": "agent_routing",
+          "predicted_answer": "replace_file_content",
+          "confidence": 0.7477,
+          "correct": true,
+          "latency_ms": 9.33,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_008",
+          "track": "agent_routing",
+          "predicted_answer": "mcp_describe_table",
+          "confidence": 0.881,
+          "correct": true,
+          "latency_ms": 7.72,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_009",
+          "track": "agent_routing",
+          "predicted_answer": "invoke_research_subagent",
+          "confidence": 0.8793,
+          "correct": true,
+          "latency_ms": 9.81,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_010",
+          "track": "agent_routing",
+          "predicted_answer": "route_fast_small_model",
+          "confidence": 0.956,
+          "correct": true,
+          "latency_ms": 6.28,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_001",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.8821,
+          "correct": true,
+          "latency_ms": 6.29,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_002",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.8645,
+          "correct": true,
+          "latency_ms": 7.83,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_003",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.8713,
+          "correct": true,
+          "latency_ms": 8.18,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_004",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.8848,
+          "correct": true,
+          "latency_ms": 9.71,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_005",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.8635,
+          "correct": false,
+          "latency_ms": 8.13,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_006",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.662,
+          "correct": true,
+          "latency_ms": 9.29,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_007",
+          "track": "security_guardrail",
+          "predicted_answer": 3,
+          "confidence": 0.8746,
+          "correct": true,
+          "latency_ms": 7.64,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_008",
+          "track": "security_guardrail",
+          "predicted_answer": 1,
+          "confidence": 0.8861,
+          "correct": false,
+          "latency_ms": 6.05,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_009",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9302,
+          "correct": true,
+          "latency_ms": 8.23,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_010",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.8835,
+          "correct": false,
+          "latency_ms": 8.84,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_001",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "EAR2026000018492",
+            "net_amount": 10000.0,
+            "vat_rate": 20,
+            "total_amount": 12000.0,
+            "currency": "TRY"
+          },
+          "confidence": 0.8712,
+          "correct": true,
+          "latency_ms": 6.72,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_002",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "INV-8841-US",
+            "total_amount": 450.0,
+            "currency": "USD",
+            "payment_status": "PAID"
+          },
+          "confidence": 0.7584,
+          "correct": true,
+          "latency_ms": 6.69,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_003",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "bill_of_lading": "TR-IST-90921",
+            "weight_kg": 1450.5,
+            "hs_code": "8471.50",
+            "declared_value": 28500.0,
+            "currency": "EUR"
+          },
+          "confidence": 0.8587,
+          "correct": true,
+          "latency_ms": 9.13,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_004",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "exception_type": "ZeroDivisionError",
+            "file_path": "/app/billing/calc.py",
+            "line_number": 142,
+            "order_id": "ORD-7712"
+          },
+          "confidence": 0.8626,
+          "correct": true,
+          "latency_ms": 5.31,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_005",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "memo_id": "CM-2026-551",
+            "ref_invoice": "EAR2026000011000",
+            "refund_amount": -3450.75,
+            "currency": "EUR",
+            "approved": true
+          },
+          "confidence": 0.9584,
+          "correct": true,
+          "latency_ms": 7.74,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_006",
+          "track": "structured_triage",
+          "predicted_answer": false,
+          "confidence": 0.8858,
+          "correct": true,
+          "latency_ms": 9.48,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_007",
+          "track": "structured_triage",
+          "predicted_answer": "upstream_timeout_504",
+          "confidence": 0.8726,
+          "correct": true,
+          "latency_ms": 8.18,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_008",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "model": "clef-flash",
+            "status": 200,
+            "in_tok": 312,
+            "out_tok": 0,
+            "latency_ms": 17.4,
+            "cached": true
+          },
+          "confidence": 0.8417,
+          "correct": true,
+          "latency_ms": 5.49,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_009",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "contract_id": "KRD-4409",
+            "principal": 250000.0,
+            "term_months": 12,
+            "monthly_rate_pct": 3.49,
+            "early_close_fee_pct": 2.0
+          },
+          "confidence": 0.8742,
+          "correct": true,
+          "latency_ms": 5.32,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_010",
+          "track": "structured_triage",
+          "predicted_answer": 3,
+          "confidence": 0.8777,
+          "correct": true,
+          "latency_ms": 7.39,
+          "output_tokens": 0
+        }
+      ]
+    },
+    {
+      "model_id": "jev-latest",
+      "display_name": "Jev-1.13 (TypeSafe AI)",
+      "provider": "TypeSafe AI (/v1/systemone)",
+      "model_type": "system1",
+      "parameters_b": 14.0,
+      "arena_score": 81.27,
+      "overall": {
+        "count": 30,
+        "accuracy": 0.8667,
+        "ece": 0.1081,
+        "mce": 0.243,
+        "brier_score": 0.1178,
+        "p50_ms": 23.765,
+        "p95_ms": 31.323,
+        "mean_ms": 24.939,
+        "avg_input_tokens": 139.5,
+        "avg_output_tokens": 0.0,
+        "cost_per_1k_usd": 0.00697,
+        "calibration_bins": [
+          {
+            "bin_start": 0.0,
+            "bin_end": 0.1,
+            "avg_conf": 0.05,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.1,
+            "bin_end": 0.2,
+            "avg_conf": 0.15,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.2,
+            "bin_end": 0.3,
+            "avg_conf": 0.25,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.3,
+            "bin_end": 0.4,
+            "avg_conf": 0.35,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.4,
+            "bin_end": 0.5,
+            "avg_conf": 0.45,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.5,
+            "bin_end": 0.6,
+            "avg_conf": 0.55,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.6,
+            "bin_end": 0.7,
+            "avg_conf": 0.64235,
+            "avg_acc": 0.5,
+            "count": 2
+          },
+          {
+            "bin_start": 0.7,
+            "bin_end": 0.8,
+            "avg_conf": 0.75695,
+            "avg_acc": 1.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.8,
+            "bin_end": 0.9,
+            "avg_conf": 0.84875,
+            "avg_acc": 1.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.9,
+            "bin_end": 1.0,
+            "avg_conf": 0.965467,
+            "avg_acc": 0.875,
+            "count": 24
+          }
+        ]
+      },
+      "tracks": {
+        "agent_routing": {
+          "count": 10,
+          "accuracy": 0.9,
+          "ece": 0.1328,
+          "mce": 0.3572,
+          "brier_score": 0.1142,
+          "p50_ms": 26.405,
+          "p95_ms": 30.495,
+          "mean_ms": 26.156,
+          "avg_input_tokens": 197.9,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.0099,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.6428,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.7624,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.85,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.966675,
+              "avg_acc": 0.875,
+              "count": 8
+            }
+          ]
+        },
+        "security_guardrail": {
+          "count": 10,
+          "accuracy": 0.7,
+          "ece": 0.2495,
+          "mce": 0.6419,
+          "brier_score": 0.2299,
+          "p50_ms": 21.575,
+          "p95_ms": 31.467,
+          "mean_ms": 23.522,
+          "avg_input_tokens": 113.0,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00565,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.6419,
+              "avg_acc": 0.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.75,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.848,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.9627,
+              "avg_acc": 0.75,
+              "count": 8
+            }
+          ]
+        },
+        "structured_triage": {
+          "count": 10,
+          "accuracy": 1.0,
+          "ece": 0.0663,
+          "mce": 0.2485,
+          "brier_score": 0.0094,
+          "p50_ms": 24.835,
+          "p95_ms": 30.729,
+          "mean_ms": 25.139,
+          "avg_input_tokens": 107.5,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00538,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.7515,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.8495,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.967025,
+              "avg_acc": 1.0,
+              "count": 8
+            }
+          ]
+        }
+      },
+      "predictions": [
+        {
+          "scenario_id": "route_001",
+          "track": "agent_routing",
+          "predicted_answer": "git_diff_unstaged",
+          "confidence": 0.6428,
+          "correct": true,
+          "latency_ms": 29.55,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_002",
+          "track": "agent_routing",
+          "predicted_answer": "search_code",
+          "confidence": 0.9775,
+          "correct": true,
+          "latency_ms": 30.68,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_003",
+          "track": "agent_routing",
+          "predicted_answer": "run_tests",
+          "confidence": 0.9798,
+          "correct": true,
+          "latency_ms": 23.11,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_004",
+          "track": "agent_routing",
+          "predicted_answer": "read_url_content",
+          "confidence": 0.9223,
+          "correct": true,
+          "latency_ms": 23.08,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_005",
+          "track": "agent_routing",
+          "predicted_answer": "write_file",
+          "confidence": 0.9729,
+          "correct": false,
+          "latency_ms": 30.27,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_006",
+          "track": "agent_routing",
+          "predicted_answer": "view_file_slice",
+          "confidence": 0.9826,
+          "correct": true,
+          "latency_ms": 28.39,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_007",
+          "track": "agent_routing",
+          "predicted_answer": "replace_file_content",
+          "confidence": 0.7624,
+          "correct": true,
+          "latency_ms": 20.46,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_008",
+          "track": "agent_routing",
+          "predicted_answer": "mcp_describe_table",
+          "confidence": 0.9666,
+          "correct": true,
+          "latency_ms": 29.14,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_009",
+          "track": "agent_routing",
+          "predicted_answer": "invoke_research_subagent",
+          "confidence": 0.9787,
+          "correct": true,
+          "latency_ms": 24.42,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_010",
+          "track": "agent_routing",
+          "predicted_answer": "route_fast_small_model",
+          "confidence": 0.953,
+          "correct": true,
+          "latency_ms": 22.46,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_001",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9575,
+          "correct": true,
+          "latency_ms": 20.31,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_002",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9656,
+          "correct": false,
+          "latency_ms": 19.77,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_003",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.848,
+          "correct": true,
+          "latency_ms": 21.87,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_004",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9603,
+          "correct": false,
+          "latency_ms": 29.74,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_005",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9738,
+          "correct": true,
+          "latency_ms": 20.19,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_006",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.6419,
+          "correct": false,
+          "latency_ms": 19.01,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_007",
+          "track": "security_guardrail",
+          "predicted_answer": 3,
+          "confidence": 0.9556,
+          "correct": true,
+          "latency_ms": 21.28,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_008",
+          "track": "security_guardrail",
+          "predicted_answer": 0,
+          "confidence": 0.9771,
+          "correct": true,
+          "latency_ms": 32.88,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_009",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9365,
+          "correct": true,
+          "latency_ms": 27.06,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_010",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9752,
+          "correct": true,
+          "latency_ms": 23.11,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_001",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "EAR2026000018492",
+            "net_amount": 10000.0,
+            "vat_rate": 20,
+            "total_amount": 12000.0,
+            "currency": "TRY"
+          },
+          "confidence": 0.9722,
+          "correct": true,
+          "latency_ms": 20.92,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_002",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "INV-8841-US",
+            "total_amount": 450.0,
+            "currency": "USD",
+            "payment_status": "PAID"
+          },
+          "confidence": 0.7515,
+          "correct": true,
+          "latency_ms": 22.69,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_003",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "bill_of_lading": "TR-IST-90921",
+            "weight_kg": 1450.5,
+            "hs_code": "8471.50",
+            "declared_value": 28500.0,
+            "currency": "EUR"
+          },
+          "confidence": 0.9729,
+          "correct": true,
+          "latency_ms": 24.56,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_004",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "exception_type": "ZeroDivisionError",
+            "file_path": "/app/billing/calc.py",
+            "line_number": 142,
+            "order_id": "ORD-7712"
+          },
+          "confidence": 0.9604,
+          "correct": true,
+          "latency_ms": 21.0,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_005",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "memo_id": "CM-2026-551",
+            "ref_invoice": "EAR2026000011000",
+            "refund_amount": -3450.75,
+            "currency": "EUR",
+            "approved": true
+          },
+          "confidence": 0.9518,
+          "correct": true,
+          "latency_ms": 29.36,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_006",
+          "track": "structured_triage",
+          "predicted_answer": false,
+          "confidence": 0.9583,
+          "correct": true,
+          "latency_ms": 31.85,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_007",
+          "track": "structured_triage",
+          "predicted_answer": "upstream_timeout_504",
+          "confidence": 0.9779,
+          "correct": true,
+          "latency_ms": 29.31,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_008",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "model": "clef-flash",
+            "status": 200,
+            "in_tok": 312,
+            "out_tok": 0,
+            "latency_ms": 17.4,
+            "cached": true
+          },
+          "confidence": 0.8495,
+          "correct": true,
+          "latency_ms": 25.9,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_009",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "contract_id": "KRD-4409",
+            "principal": 250000.0,
+            "term_months": 12,
+            "monthly_rate_pct": 3.49,
+            "early_close_fee_pct": 2.0
+          },
+          "confidence": 0.9759,
+          "correct": true,
+          "latency_ms": 25.11,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_010",
+          "track": "structured_triage",
+          "predicted_answer": 3,
+          "confidence": 0.9668,
+          "correct": true,
+          "latency_ms": 20.69,
+          "output_tokens": 0
+        }
+      ]
+    },
+    {
+      "model_id": "tev1-4b-exp",
+      "display_name": "Tev1-4B-Experimental",
+      "provider": "Together AI / Ollama",
+      "model_type": "system1",
+      "parameters_b": 4.0,
+      "arena_score": 77.93,
+      "overall": {
+        "count": 30,
+        "accuracy": 0.8667,
+        "ece": 0.1748,
+        "mce": 0.7478,
+        "brier_score": 0.0735,
+        "p50_ms": 20.295,
+        "p95_ms": 23.81,
+        "mean_ms": 19.3,
+        "avg_input_tokens": 139.5,
+        "avg_output_tokens": 0.0,
+        "cost_per_1k_usd": 0.00349,
+        "calibration_bins": [
+          {
+            "bin_start": 0.0,
+            "bin_end": 0.1,
+            "avg_conf": 0.05,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.1,
+            "bin_end": 0.2,
+            "avg_conf": 0.15,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.2,
+            "bin_end": 0.3,
+            "avg_conf": 0.25,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.3,
+            "bin_end": 0.4,
+            "avg_conf": 0.35,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.4,
+            "bin_end": 0.5,
+            "avg_conf": 0.45,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.5,
+            "bin_end": 0.6,
+            "avg_conf": 0.55,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.6,
+            "bin_end": 0.7,
+            "avg_conf": 0.6469,
+            "avg_acc": 0.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.7,
+            "bin_end": 0.8,
+            "avg_conf": 0.7478,
+            "avg_acc": 0.0,
+            "count": 2
+          },
+          {
+            "bin_start": 0.8,
+            "bin_end": 0.9,
+            "avg_conf": 0.88528,
+            "avg_acc": 1.0,
+            "count": 10
+          },
+          {
+            "bin_start": 0.9,
+            "bin_end": 1.0,
+            "avg_conf": 0.918206,
+            "avg_acc": 1.0,
+            "count": 16
+          }
+        ]
+      },
+      "tracks": {
+        "agent_routing": {
+          "count": 10,
+          "accuracy": 0.8,
+          "ece": 0.2083,
+          "mce": 0.7529,
+          "brier_score": 0.1053,
+          "p50_ms": 20.715,
+          "p95_ms": 23.054,
+          "mean_ms": 19.781,
+          "avg_input_tokens": 197.9,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00495,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.6503,
+              "avg_acc": 0.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.7529,
+              "avg_acc": 0.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.895733,
+              "avg_acc": 1.0,
+              "count": 3
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.92652,
+              "avg_acc": 1.0,
+              "count": 5
+            }
+          ]
+        },
+        "security_guardrail": {
+          "count": 10,
+          "accuracy": 0.9,
+          "ece": 0.1571,
+          "mce": 0.6435,
+          "brier_score": 0.0513,
+          "p50_ms": 20.38,
+          "p95_ms": 23.842,
+          "mean_ms": 19.71,
+          "avg_input_tokens": 113.0,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00283,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.6435,
+              "avg_acc": 0.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.75,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.882475,
+              "avg_acc": 1.0,
+              "count": 4
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.90856,
+              "avg_acc": 1.0,
+              "count": 5
+            }
+          ]
+        },
+        "structured_triage": {
+          "count": 10,
+          "accuracy": 0.9,
+          "ece": 0.1591,
+          "mce": 0.7427,
+          "brier_score": 0.0639,
+          "p50_ms": 19.68,
+          "p95_ms": 22.782,
+          "mean_ms": 18.409,
+          "avg_input_tokens": 107.5,
+          "avg_output_tokens": 0.0,
+          "cost_per_1k_usd": 0.00269,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.7427,
+              "avg_acc": 0.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.878567,
+              "avg_acc": 1.0,
+              "count": 3
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.919317,
+              "avg_acc": 1.0,
+              "count": 6
+            }
+          ]
+        }
+      },
+      "predictions": [
+        {
+          "scenario_id": "route_001",
+          "track": "agent_routing",
+          "predicted_answer": "git_diff_staged",
+          "confidence": 0.6503,
+          "correct": false,
+          "latency_ms": 20.45,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_002",
+          "track": "agent_routing",
+          "predicted_answer": "search_code",
+          "confidence": 0.9035,
+          "correct": true,
+          "latency_ms": 19.79,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_003",
+          "track": "agent_routing",
+          "predicted_answer": "run_tests",
+          "confidence": 0.8971,
+          "correct": true,
+          "latency_ms": 21.79,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_004",
+          "track": "agent_routing",
+          "predicted_answer": "read_url_content",
+          "confidence": 0.9327,
+          "correct": true,
+          "latency_ms": 21.47,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_005",
+          "track": "agent_routing",
+          "predicted_answer": "ask_user",
+          "confidence": 0.9131,
+          "correct": true,
+          "latency_ms": 14.93,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_006",
+          "track": "agent_routing",
+          "predicted_answer": "view_file_slice",
+          "confidence": 0.8916,
+          "correct": true,
+          "latency_ms": 16.81,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_007",
+          "track": "agent_routing",
+          "predicted_answer": "write_to_file_overwrite",
+          "confidence": 0.7529,
+          "correct": false,
+          "latency_ms": 20.98,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_008",
+          "track": "agent_routing",
+          "predicted_answer": "mcp_describe_table",
+          "confidence": 0.9059,
+          "correct": true,
+          "latency_ms": 22.07,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_009",
+          "track": "agent_routing",
+          "predicted_answer": "invoke_research_subagent",
+          "confidence": 0.8985,
+          "correct": true,
+          "latency_ms": 15.66,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "route_010",
+          "track": "agent_routing",
+          "predicted_answer": "route_fast_small_model",
+          "confidence": 0.9774,
+          "correct": true,
+          "latency_ms": 23.86,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_001",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9004,
+          "correct": true,
+          "latency_ms": 19.94,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_002",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.9107,
+          "correct": true,
+          "latency_ms": 14.41,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_003",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.8476,
+          "correct": true,
+          "latency_ms": 23.71,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_004",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.9053,
+          "correct": true,
+          "latency_ms": 22.34,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_005",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9094,
+          "correct": true,
+          "latency_ms": 15.88,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_006",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.6435,
+          "correct": false,
+          "latency_ms": 23.95,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_007",
+          "track": "security_guardrail",
+          "predicted_answer": 3,
+          "confidence": 0.8916,
+          "correct": true,
+          "latency_ms": 19.38,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_008",
+          "track": "security_guardrail",
+          "predicted_answer": 0,
+          "confidence": 0.8961,
+          "correct": true,
+          "latency_ms": 21.19,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_009",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.917,
+          "correct": true,
+          "latency_ms": 20.82,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "guard_010",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.8946,
+          "correct": true,
+          "latency_ms": 15.48,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_001",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "EAR2026000018492",
+            "net_amount": 10000.0,
+            "vat_rate": 20,
+            "total_amount": 12000.0,
+            "currency": "TRY"
+          },
+          "confidence": 0.9148,
+          "correct": true,
+          "latency_ms": 21.6,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_002",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "__corrupted__",
+            "total_amount": 450.0,
+            "currency": "USD",
+            "payment_status": "PAID"
+          },
+          "confidence": 0.7427,
+          "correct": false,
+          "latency_ms": 16.66,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_003",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "bill_of_lading": "TR-IST-90921",
+            "weight_kg": 1450.5,
+            "hs_code": "8471.50",
+            "declared_value": 28500.0,
+            "currency": "EUR"
+          },
+          "confidence": 0.9106,
+          "correct": true,
+          "latency_ms": 14.44,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_004",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "exception_type": "ZeroDivisionError",
+            "file_path": "/app/billing/calc.py",
+            "line_number": 142,
+            "order_id": "ORD-7712"
+          },
+          "confidence": 0.8905,
+          "correct": true,
+          "latency_ms": 23.75,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_005",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "memo_id": "CM-2026-551",
+            "ref_invoice": "EAR2026000011000",
+            "refund_amount": -3450.75,
+            "currency": "EUR",
+            "approved": true
+          },
+          "confidence": 0.9647,
+          "correct": true,
+          "latency_ms": 20.14,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_006",
+          "track": "structured_triage",
+          "predicted_answer": false,
+          "confidence": 0.9102,
+          "correct": true,
+          "latency_ms": 12.86,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_007",
+          "track": "structured_triage",
+          "predicted_answer": "upstream_timeout_504",
+          "confidence": 0.9074,
+          "correct": true,
+          "latency_ms": 21.2,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_008",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "model": "clef-flash",
+            "status": 200,
+            "in_tok": 312,
+            "out_tok": 0,
+            "latency_ms": 17.4,
+            "cached": true
+          },
+          "confidence": 0.8499,
+          "correct": true,
+          "latency_ms": 21.21,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_009",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "contract_id": "KRD-4409",
+            "principal": 250000.0,
+            "term_months": 12,
+            "monthly_rate_pct": 3.49,
+            "early_close_fee_pct": 2.0
+          },
+          "confidence": 0.9082,
+          "correct": true,
+          "latency_ms": 13.01,
+          "output_tokens": 0
+        },
+        {
+          "scenario_id": "struct_010",
+          "track": "structured_triage",
+          "predicted_answer": 3,
+          "confidence": 0.8953,
+          "correct": true,
+          "latency_ms": 19.22,
+          "output_tokens": 0
+        }
+      ]
+    },
+    {
+      "model_id": "mistral-7b-instruct",
+      "display_name": "Mistral-7B-Instruct-v0.3 (JSON)",
+      "provider": "vLLM / OpenAI-Compatible",
+      "model_type": "llm_structured",
+      "parameters_b": 7.0,
+      "arena_score": 60.1,
+      "overall": {
+        "count": 30,
+        "accuracy": 0.7333,
+        "ece": 0.2645,
+        "mce": 0.276,
+        "brier_score": 0.2569,
+        "p50_ms": 307.565,
+        "p95_ms": 401.69,
+        "mean_ms": 320.352,
+        "avg_input_tokens": 139.5,
+        "avg_output_tokens": 47.0,
+        "cost_per_1k_usd": 0.05237,
+        "calibration_bins": [
+          {
+            "bin_start": 0.0,
+            "bin_end": 0.1,
+            "avg_conf": 0.05,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.1,
+            "bin_end": 0.2,
+            "avg_conf": 0.15,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.2,
+            "bin_end": 0.3,
+            "avg_conf": 0.25,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.3,
+            "bin_end": 0.4,
+            "avg_conf": 0.35,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.4,
+            "bin_end": 0.5,
+            "avg_conf": 0.45,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.5,
+            "bin_end": 0.6,
+            "avg_conf": 0.55,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.6,
+            "bin_end": 0.7,
+            "avg_conf": 0.65,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.7,
+            "bin_end": 0.8,
+            "avg_conf": 0.75,
+            "avg_acc": 0.0,
+            "count": 0
+          },
+          {
+            "bin_start": 0.8,
+            "bin_end": 0.9,
+            "avg_conf": 0.81,
+            "avg_acc": 1.0,
+            "count": 4
+          },
+          {
+            "bin_start": 0.9,
+            "bin_end": 1.0,
+            "avg_conf": 0.9683,
+            "avg_acc": 0.692308,
+            "count": 26
+          }
+        ]
+      },
+      "tracks": {
+        "agent_routing": {
+          "count": 10,
+          "accuracy": 0.7,
+          "ece": 0.2878,
+          "mce": 0.2987,
+          "brier_score": 0.2873,
+          "p50_ms": 327.66,
+          "p95_ms": 407.3,
+          "mean_ms": 331.347,
+          "avg_input_tokens": 197.9,
+          "avg_output_tokens": 48.5,
+          "cost_per_1k_usd": 0.0627,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.75,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.81,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.965389,
+              "avg_acc": 0.666667,
+              "count": 9
+            }
+          ]
+        },
+        "security_guardrail": {
+          "count": 10,
+          "accuracy": 0.5,
+          "ece": 0.4917,
+          "mce": 0.5253,
+          "brier_score": 0.4744,
+          "p50_ms": 306.115,
+          "p95_ms": 375.469,
+          "mean_ms": 309.524,
+          "avg_input_tokens": 113.0,
+          "avg_output_tokens": 45.5,
+          "cost_per_1k_usd": 0.0472,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.75,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.81,
+              "avg_acc": 1.0,
+              "count": 1
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.9697,
+              "avg_acc": 0.444444,
+              "count": 9
+            }
+          ]
+        },
+        "structured_triage": {
+          "count": 10,
+          "accuracy": 1.0,
+          "ece": 0.062,
+          "mce": 0.19,
+          "brier_score": 0.0089,
+          "p50_ms": 301.785,
+          "p95_ms": 392.38,
+          "mean_ms": 320.184,
+          "avg_input_tokens": 107.5,
+          "avg_output_tokens": 46.9,
+          "cost_per_1k_usd": 0.04722,
+          "calibration_bins": [
+            {
+              "bin_start": 0.0,
+              "bin_end": 0.1,
+              "avg_conf": 0.05,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.1,
+              "bin_end": 0.2,
+              "avg_conf": 0.15,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.2,
+              "bin_end": 0.3,
+              "avg_conf": 0.25,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.3,
+              "bin_end": 0.4,
+              "avg_conf": 0.35,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.4,
+              "bin_end": 0.5,
+              "avg_conf": 0.45,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.5,
+              "bin_end": 0.6,
+              "avg_conf": 0.55,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.6,
+              "bin_end": 0.7,
+              "avg_conf": 0.65,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.7,
+              "bin_end": 0.8,
+              "avg_conf": 0.75,
+              "avg_acc": 0.0,
+              "count": 0
+            },
+            {
+              "bin_start": 0.8,
+              "bin_end": 0.9,
+              "avg_conf": 0.81,
+              "avg_acc": 1.0,
+              "count": 2
+            },
+            {
+              "bin_start": 0.9,
+              "bin_end": 1.0,
+              "avg_conf": 0.97,
+              "avg_acc": 1.0,
+              "count": 8
+            }
+          ]
+        }
+      },
+      "predictions": [
+        {
+          "scenario_id": "route_001",
+          "track": "agent_routing",
+          "predicted_answer": "git_diff_staged",
+          "confidence": 0.9765,
+          "correct": false,
+          "latency_ms": 396.24,
+          "output_tokens": 57
+        },
+        {
+          "scenario_id": "route_002",
+          "track": "agent_routing",
+          "predicted_answer": "search_code",
+          "confidence": 0.91,
+          "correct": true,
+          "latency_ms": 416.35,
+          "output_tokens": 60
+        },
+        {
+          "scenario_id": "route_003",
+          "track": "agent_routing",
+          "predicted_answer": "read_file",
+          "confidence": 0.9536,
+          "correct": false,
+          "latency_ms": 364.79,
+          "output_tokens": 53
+        },
+        {
+          "scenario_id": "route_004",
+          "track": "agent_routing",
+          "predicted_answer": "read_url_content",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 297.55,
+          "output_tokens": 44
+        },
+        {
+          "scenario_id": "route_005",
+          "track": "agent_routing",
+          "predicted_answer": "write_file",
+          "confidence": 0.9784,
+          "correct": false,
+          "latency_ms": 281.82,
+          "output_tokens": 42
+        },
+        {
+          "scenario_id": "route_006",
+          "track": "agent_routing",
+          "predicted_answer": "view_file_slice",
+          "confidence": 0.81,
+          "correct": true,
+          "latency_ms": 269.44,
+          "output_tokens": 40
+        },
+        {
+          "scenario_id": "route_007",
+          "track": "agent_routing",
+          "predicted_answer": "replace_file_content",
+          "confidence": 0.91,
+          "correct": true,
+          "latency_ms": 342.0,
+          "output_tokens": 50
+        },
+        {
+          "scenario_id": "route_008",
+          "track": "agent_routing",
+          "predicted_answer": "mcp_describe_table",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 268.18,
+          "output_tokens": 40
+        },
+        {
+          "scenario_id": "route_009",
+          "track": "agent_routing",
+          "predicted_answer": "invoke_research_subagent",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 313.32,
+          "output_tokens": 46
+        },
+        {
+          "scenario_id": "route_010",
+          "track": "agent_routing",
+          "predicted_answer": "route_fast_small_model",
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 363.78,
+          "output_tokens": 53
+        },
+        {
+          "scenario_id": "guard_001",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.9637,
+          "correct": false,
+          "latency_ms": 286.46,
+          "output_tokens": 42
+        },
+        {
+          "scenario_id": "guard_002",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.91,
+          "correct": true,
+          "latency_ms": 251.08,
+          "output_tokens": 38
+        },
+        {
+          "scenario_id": "guard_003",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 252.26,
+          "output_tokens": 38
+        },
+        {
+          "scenario_id": "guard_004",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.9735,
+          "correct": false,
+          "latency_ms": 312.2,
+          "output_tokens": 46
+        },
+        {
+          "scenario_id": "guard_005",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 294.43,
+          "output_tokens": 43
+        },
+        {
+          "scenario_id": "guard_006",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.81,
+          "correct": true,
+          "latency_ms": 378.7,
+          "output_tokens": 55
+        },
+        {
+          "scenario_id": "guard_007",
+          "track": "security_guardrail",
+          "predicted_answer": 0,
+          "confidence": 0.9724,
+          "correct": false,
+          "latency_ms": 336.36,
+          "output_tokens": 49
+        },
+        {
+          "scenario_id": "guard_008",
+          "track": "security_guardrail",
+          "predicted_answer": 1,
+          "confidence": 0.9867,
+          "correct": false,
+          "latency_ms": 371.52,
+          "output_tokens": 54
+        },
+        {
+          "scenario_id": "guard_009",
+          "track": "security_guardrail",
+          "predicted_answer": false,
+          "confidence": 0.951,
+          "correct": false,
+          "latency_ms": 300.59,
+          "output_tokens": 44
+        },
+        {
+          "scenario_id": "guard_010",
+          "track": "security_guardrail",
+          "predicted_answer": true,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 311.64,
+          "output_tokens": 46
+        },
+        {
+          "scenario_id": "struct_001",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "EAR2026000018492",
+            "net_amount": 10000.0,
+            "vat_rate": 20,
+            "total_amount": 12000.0,
+            "currency": "TRY"
+          },
+          "confidence": 0.81,
+          "correct": true,
+          "latency_ms": 288.44,
+          "output_tokens": 43
+        },
+        {
+          "scenario_id": "struct_002",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "invoice_id": "INV-8841-US",
+            "total_amount": 450.0,
+            "currency": "USD",
+            "payment_status": "PAID"
+          },
+          "confidence": 0.91,
+          "correct": true,
+          "latency_ms": 292.46,
+          "output_tokens": 43
+        },
+        {
+          "scenario_id": "struct_003",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "bill_of_lading": "TR-IST-90921",
+            "weight_kg": 1450.5,
+            "hs_code": "8471.50",
+            "declared_value": 28500.0,
+            "currency": "EUR"
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 356.79,
+          "output_tokens": 52
+        },
+        {
+          "scenario_id": "struct_004",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "exception_type": "ZeroDivisionError",
+            "file_path": "/app/billing/calc.py",
+            "line_number": 142,
+            "order_id": "ORD-7712"
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 280.44,
+          "output_tokens": 42
+        },
+        {
+          "scenario_id": "struct_005",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "memo_id": "CM-2026-551",
+            "ref_invoice": "EAR2026000011000",
+            "refund_amount": -3450.75,
+            "currency": "EUR",
+            "approved": true
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 303.49,
+          "output_tokens": 45
+        },
+        {
+          "scenario_id": "struct_006",
+          "track": "structured_triage",
+          "predicted_answer": false,
+          "confidence": 0.81,
+          "correct": true,
+          "latency_ms": 406.15,
+          "output_tokens": 58
+        },
+        {
+          "scenario_id": "struct_007",
+          "track": "structured_triage",
+          "predicted_answer": "upstream_timeout_504",
+          "confidence": 0.91,
+          "correct": true,
+          "latency_ms": 285.62,
+          "output_tokens": 42
+        },
+        {
+          "scenario_id": "struct_008",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "model": "clef-flash",
+            "status": 200,
+            "in_tok": 312,
+            "out_tok": 0,
+            "latency_ms": 17.4,
+            "cached": true
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 312.82,
+          "output_tokens": 46
+        },
+        {
+          "scenario_id": "struct_009",
+          "track": "structured_triage",
+          "predicted_answer": {
+            "contract_id": "KRD-4409",
+            "principal": 250000.0,
+            "term_months": 12,
+            "monthly_rate_pct": 3.49,
+            "early_close_fee_pct": 2.0
+          },
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 300.08,
+          "output_tokens": 44
+        },
+        {
+          "scenario_id": "struct_010",
+          "track": "structured_triage",
+          "predicted_answer": 3,
+          "confidence": 0.99,
+          "correct": true,
+          "latency_ms": 375.55,
+          "output_tokens": 54
+        }
+      ]
+    }
+  ]
+}
